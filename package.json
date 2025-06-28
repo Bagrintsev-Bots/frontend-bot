@@ -1,0 +1,19 @@
+{
+  "name": "frontend-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Bagrintsev-Bots/frontend-bot.git",
+  "author": "bagrintsev <joker92006@mail.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "mobx": "^6.7.0",
+    "mobx-react-lite": "^3.4.0",
+    "@ant-design/charts": "^2.4.0",
+    "antd": "^5.26.2",
+    "next": "^15.3.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "axios": "^1.2.0",
+    "i18next": "^23.2.6"
+  }
+}
