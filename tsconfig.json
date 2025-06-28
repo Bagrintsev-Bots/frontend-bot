@@ -3,7 +3,11 @@
   "compilerOptions": {
     "baseUrl": ".",
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -16,7 +20,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",//FIXME: узначть для чего (ранее был react-jsx)
     "plugins": [
       {
         "name": "typescript-plugin-css-modules",
@@ -24,9 +28,19 @@
           "classnameTransform": "camelCaseOnly",
           "customMatcher": "\\.module\\.less$"
         }
+      },
+      {
+        "name": "next"
       }
-    ]
+    ],
+    "incremental": true
   },
-  "exclude": ["node_modules", "build", "scripts", "docs", "webpack"],
-  "include": ["src"]
+  "exclude": [
+    "node_modules",
+    "build"
+  ],
+  "include": [
+    "src",
+    ".next/types/**/*.ts"
+  ]
 }
