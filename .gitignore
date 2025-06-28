@@ -24,3 +24,5 @@ yarn-error.log*
 
 env-config.js
 version.js
+
+/.idea
