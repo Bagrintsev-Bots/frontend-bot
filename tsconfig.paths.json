@@ -6,6 +6,9 @@
       "@app-core": ["src/core"],
       "@app-core/*": ["src/core/*"],
 
+      "@app-scene": ["src/scene"],
+      "@app-scene/*": ["src/scene/*"],
+
     }
   }
 }
