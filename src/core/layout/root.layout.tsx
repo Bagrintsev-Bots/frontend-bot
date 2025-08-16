@@ -1,9 +1,9 @@
-import type {FC, PropsWithChildren} from 'react';
+import type { FC, PropsWithChildren } from 'react';
 
-const RootLayoutApp: FC<PropsWithChildren> = ({children}) => {
+const RootLayoutApp: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <html lang="en">
-    <body>{children}</body>
+    <html lang='en'>
+      <body>{children}</body>
     </html>
   );
 };

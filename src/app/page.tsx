@@ -1,8 +1,7 @@
-import {FC} from "react";
-import {LogIn} from "../scene/LogIn";
+import { Profile } from '@app-scene/Profile';
 
-const Page: FC = () => {
-  return <LogIn />;
+const Page = () => {
+  return <Profile />;
 };
 
 export default Page;
