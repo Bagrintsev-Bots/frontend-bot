@@ -1,7 +1,7 @@
-import { Profile } from '@app-scene/Profile';
+import { LogIn } from '@app-scene/AuthScene/components/LogIn';
 
 const Page = () => {
-  return <Profile />;
+  return <LogIn />;
 };
 
 export default Page;

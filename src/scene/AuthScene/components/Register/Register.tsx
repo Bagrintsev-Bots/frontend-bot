@@ -1,10 +1,10 @@
 'use client';
 
-import { observer } from 'mobx-react-lite';
-import { Button, Flex, Form, FormProps, Input } from 'antd';
+import type { FC } from 'react';
 import { useForm } from 'antd/es/form/Form';
+import { Button, Flex, Form, FormProps, Input } from 'antd';
 
-export const LogIn = observer(() => {
+export const Register: FC = () => {
   const [form] = useForm();
 
   const onFinish: FormProps['onFinish'] = (values) => {
@@ -15,6 +15,10 @@ export const LogIn = observer(() => {
     <Flex style={{ height: '100vh' }} justify='center' align='center'>
       <Form form={form} onFinish={onFinish}>
         <Flex vertical justify='center' gap={20}>
+          <Form.Item name='username' noStyle required>
+            <Input type='text' placeholder='Username' />
+          </Form.Item>
+
           <Form.Item name='email' noStyle required>
             <Input type='email' placeholder='Email' />
           </Form.Item>
@@ -24,10 +28,10 @@ export const LogIn = observer(() => {
           </Form.Item>
 
           <Button htmlType='submit' type='primary'>
-            Log In
+            Register
           </Button>
         </Flex>
       </Form>
     </Flex>
   );
-});
+};

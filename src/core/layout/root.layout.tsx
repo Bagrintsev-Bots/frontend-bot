@@ -1,10 +1,19 @@
 import type { FC, PropsWithChildren } from 'react';
+import { ConfigProvider } from 'antd';
 
 const RootLayoutApp: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <html lang='en'>
+    <ConfigProvider
+      theme={{
+        components: {
+          Button: {
+            borderRadius: 25,
+          },
+        },
+      }}
+    >
       <body>{children}</body>
-    </html>
+    </ConfigProvider>
   );
 };
 
